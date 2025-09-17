@@ -10,7 +10,7 @@ const app = express();
 
 // CORS Configuration
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173', 'http://127.0.0.1:3000','https://instagram-post-finder-xmvl.vercel.app/'],
+  origin: ['http://localhost:3000', 'http://localhost:5173', 'http://127.0.0.1:3000','https://instagram-post-finder-xmvl.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Cache-Control'],
   credentials: true
