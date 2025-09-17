@@ -8,12 +8,12 @@ const chrome = require('selenium-webdriver/chrome');
 dotenv.config();
 const app = express();
 
-// CORS Configuration
+// Allow all origins
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173', 'http://127.0.0.1:3000','https://instagram-post-finder-xmvl.vercel.app'],
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Cache-Control'],
-  credentials: true
+  credentials: false // should be false when using '*'
 }));
 
 app.use(express.json({ limit: '1mb' }));
