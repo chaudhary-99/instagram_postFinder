@@ -392,7 +392,7 @@ export default function App() {
       setStreamController(controller);
 
       // Use fetch with streaming response - ONLY ONE API CALL
-      const response = await fetch('http://localhost:5001/api/hashtag-stream', {
+      const response = await fetch('https://instagram-post-finder-omega.vercel.app/api/hashtag-stream', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -511,7 +511,7 @@ export default function App() {
       if (err.name === 'AbortError') {
         setError('Stream was cancelled.');
       } else if (err.message.includes('fetch')) {
-        setError('Unable to connect to the server. Please ensure the API is running on http://localhost:5001');
+        setError('Unable to connect to the server. Please ensure the API is running on https://instagram-post-finder-omega.vercel.app/');
       } else {
         setError(err.message || 'An unexpected error occurred. Please try again.');
       }
