@@ -392,7 +392,7 @@ export default function App() {
       setStreamController(controller);
 
       // Use fetch with streaming response - ONLY ONE API CALL
-      const response = await fetch('https://instagram-post-finder-backend-lemon.vercel.app/api/hashtag-stream', {
+      const response = await fetch('https://instagram-post-finder-backend-lemon.vercel.app/api/hashtag-stream/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
