@@ -1,0 +1,32 @@
+{
+  "name": "instagram-login-selenium-server",
+  "version": "1.0.0",
+  "description": "Node.js backend (Express) that logs into Instagram using Selenium WebDriver with resilient selectors.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js",
+    "postinstall": "echo \"Ensuring chromedriver is available...\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chromedriver": "^140.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^4.21.2",
+    "selenium-webdriver": "^4.23.0"
+  },
+  "keywords": [
+    "selenium",
+    "webdriver",
+    "instagram",
+    "automation",
+    "nodejs",
+    "express",
+    "chromedriver"
+  ],
+  "license": "MIT"
+}
